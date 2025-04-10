@@ -1,0 +1,373 @@
+{
+  "menu": [
+    {
+      "name": "لوحة التحكم",
+      "icon": "tf-icons ti ti-smart-home",
+      "slug": "dashboard.index",
+      "url": "/dashboard",
+      "permissions": "access dashboard"
+    },
+    {
+      "name": "التحليلات",
+      "icon": "tf-icons ti ti-chart-dots",
+      "slug": "dashboard.analytics",
+      "url": "/dashboard/analytics",
+      "permissions": "view analytics"
+    },
+    {
+      "menuHeader": "إدارة النظام"
+    },
+    {
+      "name": "إدارة المستخدمين",
+      "icon": "tf-icons ti ti-users",
+      "slug": "users",
+      "permissions": "manage users",
+      "submenu": [
+        {
+          "name": "المستخدمين",
+          "icon": "tf-icons ti ti-user",
+          "slug": "users.index",
+          "url": "/dashboard/users",
+          "permissions": "manage users"
+        },
+        {
+          "name": "الأدوار",
+          "icon": "tf-icons ti ti-shield",
+          "slug": "roles.index",
+          "url": "/dashboard/roles",
+          "permissions": "manage roles"
+        },
+        {
+          "name": "الصلاحيات",
+          "icon": "tf-icons ti ti-lock",
+          "slug": "permissions.index",
+          "url": "/dashboard/permissions",
+          "permissions": "manage permissions"
+        }
+      ]
+    },
+    {
+      "menuHeader": "إدارة المحتوى"
+    },
+    {
+      "name": "المقالات",
+      "icon": "tf-icons ti ti-article",
+      "slug": "articles",
+      "permissions": "manage articles",
+      "submenu": [
+        {
+          "name": "جميع المقالات",
+          "icon": "tf-icons ti ti-files",
+          "slug": "articles.index",
+          "url": "/dashboard/articles",
+          "permissions": "manage articles"
+        },
+        {
+          "name": "إضافة مقال",
+          "icon": "tf-icons ti ti-file-plus",
+          "slug": "articles.create",
+          "url": "/dashboard/articles/create",
+          "permissions": "manage articles"
+        }
+      ]
+    },
+    {
+      "name": "الأخبار",
+      "icon": "tf-icons ti ti-news",
+      "slug": "news",
+      "permissions": "manage news",
+      "submenu": [
+        {
+          "name": "جميع الأخبار",
+          "icon": "tf-icons ti ti-files",
+          "slug": "news.index",
+          "url": "/dashboard/news",
+          "permissions": "manage news"
+        },
+        {
+          "name": "إضافة خبر",
+          "icon": "tf-icons ti ti-file-plus",
+          "slug": "news.create",
+          "url": "/dashboard/news/create",
+          "permissions": "manage news"
+        }
+      ]
+    },
+    {
+      "name": "التصنيفات",
+      "icon": "tf-icons ti ti-category",
+      "slug": "categories.index",
+      "url": "/dashboard/categories",
+      "permissions": "manage categories"
+    },
+    {
+      "name": "الملفات",
+      "icon": "tf-icons ti ti-files",
+      "slug": "files.index",
+      "url": "/dashboard/files",
+      "permissions": "manage files"
+    },
+    {
+      "menuHeader": "إدارة المدرسة"
+    },
+    {
+      "name": "الفصول الدراسية",
+      "icon": "tf-icons ti ti-school",
+      "slug": "school-classes.index",
+      "url": "/dashboard/school-classes",
+      "permissions": "manage school classes"
+    },
+    {
+      "name": "المواد الدراسية",
+      "icon": "tf-icons ti ti-book",
+      "slug": "subjects.index",
+      "url": "/dashboard/subjects",
+      "permissions": "manage subjects"
+    },
+    {
+      "name": "الفصول الدراسية",
+      "icon": "tf-icons ti ti-calendar",
+      "slug": "semesters.index",
+      "url": "/dashboard/semesters",
+      "permissions": "manage semesters"
+    },
+    {
+      "menuHeader": "التواصل"
+    },
+    {
+      "name": "الرسائل",
+      "icon": "tf-icons ti ti-messages",
+      "slug": "messages",
+      "badge": ["danger", "جديد"],
+      "permissions": "manage messages",
+      "submenu": [
+        {
+          "name": "صندوق الوارد",
+          "icon": "tf-icons ti ti-inbox",
+          "slug": "messages.index",
+          "url": "/dashboard/messages",
+          "permissions": "view messages"
+        },
+        {
+          "name": "إنشاء رسالة",
+          "icon": "tf-icons ti ti-pencil",
+          "slug": "messages.compose",
+          "url": "/dashboard/messages/compose",
+          "permissions": "send messages"
+        },
+        {
+          "name": "الرسائل المرسلة",
+          "icon": "tf-icons ti ti-send",
+          "slug": "messages.sent",
+          "url": "/dashboard/messages/sent",
+          "permissions": "view messages"
+        },
+        {
+          "name": "المسودات",
+          "icon": "tf-icons ti ti-file",
+          "slug": "messages.drafts",
+          "url": "/dashboard/messages/drafts",
+          "permissions": "view messages"
+        },
+        {
+          "name": "المهملات",
+          "icon": "tf-icons ti ti-trash",
+          "slug": "messages.trash",
+          "url": "/dashboard/messages/trash",
+          "permissions": "view messages"
+        }
+      ]
+    },
+    {
+      "menuHeader": "الأمان والمراقبة"
+    },
+    {
+      "name": "المراقبة",
+      "icon": "tf-icons ti ti-activity",
+      "slug": "monitoring",
+      "permissions": "manage monitoring",
+      "submenu": [
+        {
+          "name": "لوحة المراقبة",
+          "icon": "tf-icons ti ti-dashboard",
+          "slug": "monitoring.monitorboard",
+          "url": "/dashboard/monitoring/monitorboard",
+          "permissions": "manage monitoring"
+        },
+        {
+          "name": "الزوار النشطون",
+          "icon": "tf-icons ti ti-users",
+          "slug": "monitoring.active-visitors",
+          "url": "/dashboard/monitoring/active-visitors",
+          "permissions": "manage monitoring",
+          "badge": ["success", "مباشر"]
+        },
+        {
+          "name": "نشاط المستخدمين",
+          "icon": "tf-icons ti ti-users",
+          "slug": "activity.index",
+          "url": "/dashboard/activities",
+          "permissions": "view activity"
+        },
+        {
+          "name": "سجلات الأخطاء",
+          "icon": "tf-icons ti ti-alert-triangle",
+          "slug": "monitoring.error-logs",
+          "url": "/dashboard/monitoring/error-logs",
+          "permissions": "manage monitoring"
+        },
+        {
+          "name": "إحصائيات النظام",
+          "icon": "tf-icons ti ti-chart-bar",
+          "slug": "monitoring.stats",
+          "url": "/dashboard/monitoring/stats",
+          "permissions": "manage monitoring"
+        }
+      ]
+    },
+    {
+      "name": "الأداء",
+      "icon": "tf-icons ti ti-gauge",
+      "slug": "performance.index",
+      "permissions": "manage performance",
+      "submenu": [
+        {
+          "name": "لوحة الأداء",
+          "icon": "tf-icons ti ti-dashboard",
+          "slug": "performance.index",
+          "url": "/dashboard/performance",
+          "permissions": "manage performance"
+        },
+        {
+          "name": "المقاييس",
+          "icon": "tf-icons ti ti-chart-dots",
+          "slug": "performance.metrics",
+          "url": "/dashboard/performance/metrics",
+          "permissions": "manage performance"
+        }
+      ]
+    },
+    {
+      "name": "Redis",
+      "icon": "tf-icons ti ti-database",
+      "slug": "redis",
+      "permissions": "manage redis",
+      "submenu": [
+        {
+          "name": "لوحة التحكم",
+          "icon": "tf-icons ti ti-dashboard",
+          "slug": "redis.dashboard",
+          "url": "/dashboard/redis",
+          "permissions": "view redis"
+        },
+        {
+          "name": "env-settings Redis",
+          "icon": "tf-icons ti ti-database",
+          "slug": "redis.env-settings",
+          "url": "/dashboard/redis/env-settings",
+          "permissions": "monitor redis"
+        },
+        {
+          "name": "فحص التواصل",
+          "icon": "tf-icons ti ti-chart-line",
+          "slug": "redis.test",
+          "url": "/dashboard/redis/test",
+          "permissions": "view redis stats"
+        }
+      ]
+    },
+    {
+      "name": "الأمان",
+      "icon": "tf-icons ti ti-shield-lock",
+      "slug": "security",
+      "permissions": "manage security",
+      "submenu": [
+        {
+          "name": "لوحة التحكم",
+          "icon": "tf-icons ti ti-file-text",
+          "slug": "security",
+          "url": "/dashboard/security",
+          "permissions": "view security"
+        },
+        {
+          "name": "سجلات الأمان",
+          "icon": "tf-icons ti ti-file-text",
+          "slug": "security.logs",
+          "url": "/dashboard/security/logs",
+          "permissions": "view security logs"
+        },
+        {
+          "name": "تحليلات الأمان",
+          "icon": "tf-icons ti ti-chart-bar",
+          "slug": "security.analytics",
+          "url": "/dashboard/security/analytics",
+          "permissions": "view security analytics"
+        },
+        {
+          "name": "سجلات معدل الطلبات",
+          "icon": "tf-icons ti ti-chart-bar",
+          "slug": "security.rate-limit-logs",
+          "url": "/dashboard/security/rate-limit-logs",
+          "permissions": "view security"
+        },
+        {
+          "name": "العناوين المحظورة",
+          "icon": "tf-icons ti ti-ban",
+          "slug": "security.blocked-ips",
+          "url": "/dashboard/security/blocked-ips",
+          "permissions": "manage blocked ips"
+        }
+      ]
+    },
+   
+    {
+      "menuHeader": "الإعدادات"
+    },
+    {
+      "name": "إعدادات النظام",
+      "icon": "tf-icons ti ti-settings",
+      "slug": "settings",
+      "permissions": "manage settings",
+      "submenu": [
+        {
+          "name": "الإعدادات العامة",
+          "icon": "tf-icons ti ti-adjustments",
+          "slug": "settings.index",
+          "url": "/dashboard/settings",
+          "permissions": "manage settings"
+        },
+        {
+          "name": "إعدادات OneSignal",
+          "icon": "tf-icons ti ti-bell",
+          "slug": "settings.onesignal",
+          "url": "/dashboard/settings/onesignal",
+          "permissions": "manage settings"
+        },
+        {
+          "name": "اختبار SMTP",
+          "icon": "tf-icons ti ti-mail",
+          "slug": "settings.test-smtp",
+          "url": "/dashboard/settings/test-smtp",
+          "permissions": "manage settings"
+        }
+      ]
+    },
+    {
+      "name": "التقويم",
+      "icon": "tf-icons ti ti-calendar",
+      "slug": "calendar.index",
+      "url": "/dashboard/calendar",
+      "permissions": "manage calendar"
+    },
+    {
+      "menuHeader": "SEO وخريطة الموقع"
+    },
+    {
+      "name": "خريطة الموقع",
+      "icon": "tf-icons ti ti-sitemap",
+      "slug": "sitemap.index",
+      "url": "/dashboard/sitemap",
+      "permissions": "manage sitemap"
+    }
+  ]
+}

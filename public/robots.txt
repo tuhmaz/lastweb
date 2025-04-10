@@ -1,0 +1,57 @@
+User-agent: *
+Allow: /
+
+# منع الوصول إلى لوحة التحكم والإدارة
+Disallow: /dashboard/
+Disallow: /admin/
+Disallow: /control/
+
+# منع الوصول إلى صفحات المصادقة
+Disallow: /login
+Disallow: /register
+Disallow: /password/
+Disallow: /email/
+Disallow: /verify/
+Disallow: /confirm/
+
+# منع الوصول إلى واجهات API
+Disallow: /api/
+
+# منع الوصول إلى صفحات الأخطاء والتصحيح
+Disallow: /error/
+Disallow: /debug/
+Disallow: /test/
+
+# منع الوصول إلى المسارات الخاصة
+Disallow: /storage/
+Disallow: /vendor/
+Disallow: /node_modules/
+Disallow: /.git/
+Disallow: /.env
+Disallow: /composer.json
+Disallow: /composer.lock
+Disallow: /package.json
+Disallow: /package-lock.json
+Disallow: /webpack.mix.js
+Disallow: /webpack.config.js
+Disallow: /phpunit.xml
+Disallow: /artisan
+
+# السماح بالوصول إلى ملفات sitemap
+Allow: /sitemap.xml
+Allow: /sitemaps/
+Allow: /site-map/
+
+# تحديد موقع ملف Sitemap
+Sitemap: https://yourdomain.com/storage/sitemaps/sitemap_articles_jo.xml
+Sitemap: https://yourdomain.com/storage/sitemaps/sitemap_news_jo.xml
+Sitemap: https://yourdomain.com/storage/sitemaps/sitemap_pages_jo.xml
+Sitemap: https://yourdomain.com/storage/sitemaps/sitemap_articles_sa.xml
+Sitemap: https://yourdomain.com/storage/sitemaps/sitemap_news_sa.xml
+Sitemap: https://yourdomain.com/storage/sitemaps/sitemap_pages_sa.xml
+Sitemap: https://yourdomain.com/storage/sitemaps/sitemap_articles_eg.xml
+Sitemap: https://yourdomain.com/storage/sitemaps/sitemap_news_eg.xml
+Sitemap: https://yourdomain.com/storage/sitemaps/sitemap_pages_eg.xml
+Sitemap: https://yourdomain.com/storage/sitemaps/sitemap_articles_ps.xml
+Sitemap: https://yourdomain.com/storage/sitemaps/sitemap_news_ps.xml
+Sitemap: https://yourdomain.com/storage/sitemaps/sitemap_pages_ps.xml

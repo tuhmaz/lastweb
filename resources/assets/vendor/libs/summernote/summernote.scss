@@ -1,0 +1,50 @@
+// Import Summernote styles
+@import 'summernote/dist/summernote-bs5.min.css';
+
+// Custom styles for Bootstrap 5 integration
+.note-editor.note-frame {
+  border-color: var(--bs-border-color);
+  border-radius: var(--bs-border-radius);
+
+  .note-toolbar {
+    background-color: var(--bs-light);
+    border-bottom: 1px solid var(--bs-border-color);
+    padding: 0.5rem;
+  }
+
+  .note-editing-area {
+    background-color: var(--bs-white);
+
+    .note-editable {
+      padding: 1rem;
+      min-height: 300px;
+    }
+  }
+
+  .note-statusbar {
+    background-color: var(--bs-light);
+  }
+
+  .note-btn {
+    padding: 0.25rem 0.5rem;
+    font-size: 0.875rem;
+    line-height: 1.5;
+    border-radius: 0.25rem;
+    color: var(--bs-dark);
+    background-color: var(--bs-light);
+    border: 1px solid var(--bs-border-color);
+
+    &:hover {
+      background-color: var(--bs-gray-200);
+      border-color: var(--bs-gray-300);
+    }
+  }
+
+  .note-dropdown-menu {
+    min-width: 100px;
+    padding: 0.5rem 0;
+    background-color: var(--bs-white);
+    border: 1px solid var(--bs-border-color);
+    border-radius: var(--bs-border-radius);
+  }
+}

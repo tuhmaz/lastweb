@@ -1,0 +1,330 @@
+{
+  "menu": [
+    {
+      "url": "/",
+      "icon": "menu-icon tf-icons ti ti-smart-home",
+      "name": "الرئيسية",
+      "slug": "home"
+    },
+    {
+      "url": "/dashboard",
+      "icon": "menu-icon tf-icons ti ti-layout-dashboard",
+      "name": "لوحة التحكم",
+      "slug": "dashboard"
+    },
+    {
+      "name": "الرسائل",
+      "icon": "menu-icon tf-icons ti ti-mail",
+      "slug": "messages",
+      "submenu": [
+        {
+          "url": "/dashboard/messages",
+          "name": "صندوق الوارد",
+          "icon": "menu-icon tf-icons ti ti-inbox",
+          "slug": "messages-inbox"
+        },
+        {
+          "url": "/dashboard/messages/sent",
+          "name": "الرسائل المرسلة",
+          "icon": "menu-icon tf-icons ti ti-send",
+          "slug": "messages-sent"
+        },
+        {
+          "url": "/dashboard/messages/compose",
+          "name": "إنشاء رسالة",
+          "icon": "menu-icon tf-icons ti ti-pencil",
+          "slug": "messages-compose"
+        }
+      ]
+    },
+    {
+      "name": "إدارة المستخدمين",
+      "icon": "menu-icon tf-icons ti ti-users",
+      "slug": "users-management",
+      "submenu": [
+        {
+          "url": "/dashboard/users",
+          "name": "قائمة المستخدمين",
+          "icon": "menu-icon tf-icons ti ti-user-check",
+          "slug": "users-list"
+        },
+        {
+          "url": "/dashboard/roles",
+          "name": "الأدوار",
+          "icon": "menu-icon tf-icons ti ti-shield-check",
+          "slug": "roles"
+        },
+        {
+          "url": "/dashboard/permissions",
+          "name": "الصلاحيات",
+          "icon": "menu-icon tf-icons ti ti-lock",
+          "slug": "permissions"
+        }
+      ]
+    },
+    {
+      "name": "إدارة المحتوى",
+      "icon": "menu-icon tf-icons ti ti-layout-grid",
+      "slug": "content-management",
+      "submenu": [
+        {
+          "url": "/dashboard/categories",
+          "name": "الفئات",
+          "icon": "menu-icon tf-icons ti ti-category",
+          "slug": "categories"
+        },
+        {
+          "url": "/dashboard/news",
+          "name": "الأخبار",
+          "icon": "menu-icon tf-icons ti ti-news",
+          "slug": "news"
+        },
+        {
+          "url": "/dashboard/articles",
+          "name": "المقالات",
+          "icon": "menu-icon tf-icons ti ti-article",
+          "slug": "articles"
+        },
+        {
+          "name": "الملفات",
+          "icon": "menu-icon tf-icons ti ti-files",
+          "slug": "files-management",
+          "submenu": [
+            {
+              "url": "/dashboard/files?country=1",
+              "name": "ملفات الأردن",
+              "slug": "files-jordan"
+            },
+            {
+              "url": "/dashboard/files?country=2",
+              "name": "ملفات السعودية",
+              "slug": "files-saudi"
+            },
+            {
+              "url": "/dashboard/files?country=3",
+              "name": "ملفات مصر",
+              "slug": "files-egypt"
+            },
+            {
+              "url": "/dashboard/files?country=4",
+              "name": "ملفات فلسطين",
+              "slug": "files-palestine"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "إدارة المدرسة",
+      "icon": "menu-icon tf-icons ti ti-school",
+      "slug": "academic-management",
+      "submenu": [
+        {
+          "name": "الصفوف الدراسية",
+          "icon": "menu-icon tf-icons ti ti-building",
+          "slug": "school-classes",
+          "submenu": [
+            {
+              "url": "/dashboard/school-classes",
+              "name": "قائمة الصفوف",
+              "slug": "classes-list"
+            },
+            {
+              "url": "/dashboard/school-classes/create",
+              "name": "إضافة صف",
+              "slug": "classes-create"
+            }
+          ]
+        },
+        {
+          "name": "المواد الدراسية",
+          "icon": "menu-icon tf-icons ti ti-book",
+          "slug": "subjects",
+          "submenu": [
+            {
+              "url": "/dashboard/subjects",
+              "name": "قائمة المواد",
+              "slug": "subjects-list"
+            },
+            {
+              "url": "/dashboard/subjects/create",
+              "name": "إضافة مادة",
+              "slug": "subjects-create"
+            }
+          ]
+        },
+        {
+          "name": "الفصول الدراسية",
+          "icon": "menu-icon tf-icons ti ti-calendar-time",
+          "slug": "semesters",
+          "submenu": [
+            {
+              "url": "/dashboard/semesters?country=jordan",
+              "name": "الأردن",
+              "slug": "semesters-jordan"
+            },
+            {
+              "url": "/dashboard/semesters?country=saudi",
+              "name": "السعودية",
+              "slug": "semesters-saudi"
+            },
+            {
+              "url": "/dashboard/semesters?country=egypt",
+              "name": "مصر",
+              "slug": "semesters-egypt"
+            },
+            {
+              "url": "/dashboard/semesters?country=palestine",
+              "name": "فلسطين",
+              "slug": "semesters-palestine"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "مراقبة النظام",
+      "icon": "menu-icon tf-icons ti ti-chart-bar",
+      "slug": "monitoring",
+      "submenu": [
+        {
+          "url": "/dashboard/monitoring",
+          "name": "لوحة المراقبة",
+          "icon": "menu-icon tf-icons ti ti-dashboard",
+          "slug": "monitoring-dashboard"
+        },
+        {
+          "url": "/dashboard/monitoring/stats",
+          "name": "إحصائيات المراقبة",
+          "icon": "menu-icon tf-icons ti ti-chart-line",
+          "slug": "monitoring-stats"
+        }
+      ]
+    },
+    {
+      "name": "مقاييس الأداء",
+      "icon": "menu-icon tf-icons ti ti-activity",
+      "slug": "performance",
+      "submenu": [
+        {
+          "url": "/dashboard/performance",
+          "name": "لوحة الأداء",
+          "icon": "menu-icon tf-icons ti ti-dashboard",
+          "slug": "performance-dashboard"
+        },
+        {
+          "url": "/dashboard/performance/metrics",
+          "name": "مقاييس الأداء",
+          "icon": "menu-icon tf-icons ti ti-chart-bar",
+          "slug": "performance-metrics"
+        },
+        {
+          "url": "/dashboard/performance/metrics/data",
+          "name": "بيانات المقاييس",
+          "icon": "menu-icon tf-icons ti ti-database",
+          "slug": "performance-metrics-data"
+        }
+      ]
+    },
+    {
+      "name": "إعدادات Redis",
+      "icon": "menu-icon tf-icons ti ti-database",
+      "slug": "redis-settings",
+      "submenu": [
+        {
+          "url": "/dashboard/redis",
+          "name": "لوحة Redis",
+          "icon": "menu-icon tf-icons ti ti-dashboard",
+          "slug": "redis-dashboard"
+        },
+        {
+          "url": "/dashboard/redis/env-settings",
+          "name": "إعدادات البيئة",
+          "icon": "menu-icon tf-icons ti ti-settings",
+          "slug": "redis-env-settings"
+        },
+        {
+          "url": "/dashboard/redis/test",
+          "name": "فحص اتصال Redis",
+          "icon": "menu-icon tf-icons ti ti-plug",
+          "slug": "redis-test"
+        }
+      ]
+    },
+    {
+      "name": "الإعدادات العامة",
+      "icon": "menu-icon tf-icons ti ti-settings-2",
+      "slug": "general-settings",
+      "submenu": [
+        {
+          "url": "/dashboard/settings",
+          "name": "الإعدادات",
+          "icon": "menu-icon tf-icons ti ti-settings",
+          "slug": "settings"
+        }
+      ]
+    },
+    {
+      "name": "تحسين محركات البحث",
+      "icon": "menu-icon tf-icons ti ti-search",
+      "slug": "seo",
+      "submenu": [
+        {
+          "url": "/dashboard/sitemap",
+          "name": "خريطة الموقع",
+          "icon": "menu-icon tf-icons ti ti-sitemap",
+          "slug": "sitemap"
+        },
+        {
+          "url": "/dashboard/sitemap/manage",
+          "name": "إدارة المحتوى",
+          "icon": "menu-icon tf-icons ti ti-sitemap",
+          "slug": "manage"
+        }
+      ]
+    },
+    {
+      "name": "الأمان",
+      "icon": "menu-icon tf-icons ti ti-shield-lock",
+      "slug": "security",
+      "submenu": [
+        {
+          "url": "/dashboard/security",
+          "name": "لوحة التحكم",
+          "icon": "menu-icon tf-icons ti ti-dashboard",
+          "slug": "security.index"
+        },
+        {
+          "url": "/dashboard/security/logs",
+          "name": "سجلات الأمان",
+          "icon": "menu-icon tf-icons ti ti-list",
+          "slug": "security.logs"
+        },
+        {
+          "url": "/dashboard/security/analytics",
+          "name": "التحليلات",
+          "icon": "menu-icon tf-icons ti ti-chart-bar",
+          "slug": "security.analytics"
+        },
+        {
+          "url": "/dashboard/security/blocked-ips",
+          "name": "العناوين المحظورة",
+          "icon": "menu-icon tf-icons ti ti-ban",
+          "slug": "security.blocked-ips"
+        },
+        {
+          "url": "/dashboard/security/trusted-ips",
+          "name": "العناوين الموثوقة",
+          "icon": "menu-icon tf-icons ti ti-shield-check",
+          "slug": "security.trusted-ips"
+        }
+      ]
+    },
+    {
+      "url": "/dashboard/calendar",
+      "icon": "menu-icon tf-icons ti ti-calendar",
+      "name": "التقويم",
+      "slug": "calendar"
+    }
+  ]
+}

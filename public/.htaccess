@@ -1,0 +1,71 @@
+<IfModule mod_rewrite.c>
+    <IfModule mod_negotiation.c>
+        Options -MultiViews -Indexes
+    </IfModule>
+
+    RewriteEngine On
+
+    # Handle Authorization Header
+    RewriteCond %{HTTP:Authorization} .
+    RewriteRule .* - [E=HTTP_AUTHORIZATION:%{HTTP:Authorization}]
+
+    # Redirect Trailing Slashes If Not A Folder...
+    RewriteCond %{REQUEST_FILENAME} !-d
+    RewriteCond %{REQUEST_URI} (.+)/$
+    RewriteRule ^ %1 [L,R=301]
+
+    # Send Requests To Front Controller...
+    RewriteCond %{REQUEST_FILENAME} !-d
+    RewriteCond %{REQUEST_FILENAME} !-f
+    RewriteRule ^ index.php [L]
+
+    # Force HTTPS
+    RewriteCond %{HTTPS} off
+    RewriteRule ^ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+
+    # Set PHP handler
+    <FilesMatch \.php$>
+        SetHandler application/x-httpd-php
+    </FilesMatch>
+
+    # Enable CORS
+    Header set Access-Control-Allow-Origin "*"
+    Header set Access-Control-Allow-Methods "GET, POST, PUT, DELETE, OPTIONS"
+    Header set Access-Control-Allow-Headers "Content-Type, Authorization, X-API-KEY"
+
+    # منع الوصول إلى المجلدات والملفات الحساسة
+    RewriteRule ^(\.git|\.env|storage|vendor|node_modules|bootstrap/cache) - [F,L]
+    
+    # منع الوصول إلى ملفات التكوين
+    RewriteRule \.(env|gitignore|htaccess|log|yml|md|lock|json|xml|config)$ - [F,L]
+    
+    # استثناء ملف sitemap.xml من القاعدة السابقة
+    RewriteCond %{REQUEST_URI} !^/sitemap\.xml$
+    RewriteCond %{REQUEST_URI} !^/sitemaps/
+    
+    # Prevent viewing of .htaccess file
+    <Files .htaccess>
+        Order allow,deny
+        Deny from all
+    </Files>
+
+    # Prevent directory listings
+    Options -Indexes
+
+    # Protect sensitive files
+    <FilesMatch "^\.">
+        Order allow,deny
+        Deny from all
+    </FilesMatch>
+</IfModule>
+
+# منع عرض قائمة المجلدات
+<IfModule mod_autoindex.c>
+    Options -Indexes
+</IfModule>
+
+# منع الوصول إلى ملفات حساسة أخرى
+<FilesMatch "^(\.env|composer\.json|composer\.lock|package\.json|package-lock\.json|phpunit\.xml|webpack\.mix\.js|artisan)$">
+    Order allow,deny
+    Deny from all
+</FilesMatch>

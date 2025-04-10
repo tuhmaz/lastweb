@@ -1,0 +1,102 @@
+/* Article Content Styles */
+.article-content {
+  max-width: 100%;
+  margin: 0 auto;
+}
+
+/* Main article image */
+.article-main-image {
+  width: 25%;
+  height: auto;
+  object-fit: contain;
+}
+
+/* Content images (inside ql-content) */
+.ql-content img {
+  width: 100% !important; /* Override any inline styles */
+  max-width: 100% !important;
+  height: auto !important;
+  object-fit: contain;
+}
+
+.ql-content {
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+.ql-content p {
+  margin-bottom: 1rem;
+}
+
+.ql-content h1,
+.ql-content h2,
+.ql-content h3,
+.ql-content h4,
+.ql-content h5,
+.ql-content h6 {
+  margin-top: 1.5rem;
+  margin-bottom: 1rem;
+  font-weight: 600;
+}
+
+.ql-content ul,
+.ql-content ol {
+  margin-bottom: 1rem;
+  padding-left: 2rem;
+}
+
+.ql-content blockquote {
+  border-left: 4px solid #e0e0e0;
+  padding-left: 1rem;
+  margin: 1rem 0;
+  color: #666;
+}
+
+.ql-content pre {
+  background-color: #f8f9fa;
+  padding: 1rem;
+  border-radius: 4px;
+  margin: 1rem 0;
+  overflow-x: auto;
+}
+
+.ql-content a {
+  color: var(--bs-primary);
+  text-decoration: none;
+}
+
+.ql-content a:hover {
+  text-decoration: underline;
+}
+
+/* Article Details Styles */
+.article-details dt {
+  font-weight: 600;
+  color: #666;
+}
+
+.article-details dd {
+  margin-bottom: 0.5rem;
+}
+
+/* Related Files Styles */
+.list-group-item {
+  transition: background-color 0.2s;
+}
+
+.list-group-item:hover {
+  background-color: #f8f9fa;
+}
+
+.list-group-item .btn-icon {
+  padding: 0.25rem;
+  width: 32px;
+  height: 32px;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .article-content {
+    padding: 0 1rem;
+  }
+}

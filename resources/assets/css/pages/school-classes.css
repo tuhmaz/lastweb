@@ -1,0 +1,132 @@
+/**
+ * School Classes
+ */
+
+.datatables-classes {
+    /* DataTables Customization */
+    .dt-buttons {
+        margin-bottom: 1rem;
+    }
+
+    .dt-button {
+        background: #106a5a !important;
+        color: white !important;
+        border: none !important;
+        border-radius: 5px !important;
+        padding: 0.5rem 1rem !important;
+    }
+}
+
+/* Select2 Customization */
+.select2-container {
+    width: 100% !important;
+}
+
+/* Card Header */
+.card-header {
+    background: none;
+    padding: 1.5rem;
+}
+
+/* Table Headers */
+.table th {
+    text-transform: uppercase;
+    font-size: 0.85rem;
+    letter-spacing: 0.5px;
+}
+
+/* Action Buttons */
+.btn-icon {
+    width: 32px;
+    height: 32px;
+    padding: 0;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    i {
+        font-size: 1.1rem;
+    }
+}
+
+/* Pagination */
+.pagination {
+    margin-bottom: 0;
+
+    &.pagination-rounded {
+        .page-item {
+            &.first .page-link {
+                border-top-left-radius: 50% !important;
+                border-bottom-left-radius: 50% !important;
+            }
+            
+            &.last .page-link {
+                border-top-right-radius: 50% !important;
+                border-bottom-right-radius: 50% !important;
+            }
+
+            .page-link {
+                border-radius: 50%;
+                margin: 0 2px;
+                width: 34px;
+                height: 34px;
+                padding: 0;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                font-size: 0.9rem;
+            }
+        }
+    }
+
+    .page-item {
+        &.active .page-link {
+            background-color: #106a5a;
+            border-color: #106a5a;
+            color: #fff;
+            box-shadow: 0 2px 4px rgba(16, 106, 90, 0.4);
+        }
+
+        &.disabled .page-link {
+            color: #b4b4b4;
+            background-color: #f0f0f0;
+            border-color: #e0e0e0;
+        }
+
+        .page-link {
+            color: #106a5a;
+            border: 1px solid #e0e0e0;
+            background-color: #fff;
+            transition: all 0.2s ease-in-out;
+
+            &:hover:not(.disabled) {
+                color: #fff;
+                background-color: #106a5a;
+                border-color: #106a5a;
+                box-shadow: 0 2px 4px rgba(16, 106, 90, 0.2);
+            }
+
+            i {
+                font-size: 0.85rem;
+            }
+        }
+    }
+}
+
+.dataTables_info {
+    padding: 1.5rem;
+    color: #106a5a;
+}
+
+.badge {
+    padding: 0.5em 0.9em;
+    font-size: 0.85rem;
+}
+
+.btn-sm {
+    padding: 0.4rem;
+}
+
+.table > :not(caption) > * > * {
+    padding: 1rem 1.5rem;
+}

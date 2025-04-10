@@ -1,0 +1,123 @@
+/* Notification Styles */
+.dropdown-notifications-actions {
+    margin-left: 0.5rem;
+}
+
+.dropdown-notifications-read {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+}
+
+.dropdown-notifications-read:hover .size-35 {
+    background-color: var(--bs-gray-200) !important;
+}
+
+.size-35 {
+    width: 35px;
+    height: 35px;
+    transition: background-color 0.2s ease-in-out;
+}
+
+.dropdown-notifications-item {
+    padding: 1rem;
+    border-bottom: 1px solid var(--bs-gray-200);
+}
+
+.dropdown-notifications-item:last-child {
+    border-bottom: none;
+}
+
+.dropdown-notifications-item .avatar-initial {
+    width: 38px;
+    height: 38px;
+}
+
+.dropdown-notifications-item h6 {
+    font-size: 0.9375rem;
+    margin-bottom: 0.25rem;
+}
+
+.dropdown-notifications-item p {
+    font-size: 0.8125rem;
+    color: var(--bs-gray-600);
+}
+
+.dropdown-notifications-item small {
+    font-size: 0.75rem;
+}
+
+/* Tooltip styling */
+.tooltip {
+    font-size: 0.8125rem;
+}
+
+/* Notification Badge */
+.notification-badge {
+    padding: 0.25rem 0.45rem;
+    min-width: 18px;
+    height: 18px;
+    line-height: 1;
+    font-size: 0.65rem !important;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* SweetAlert2 Custom Styles */
+.swal2-popup {
+    border-radius: 0.5rem;
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
+}
+
+.swal2-title {
+    font-size: 1.25rem !important;
+    font-weight: 600 !important;
+    color: var(--bs-body-color);
+}
+
+.swal2-html-container {
+    font-size: 0.9375rem !important;
+    color: var(--bs-gray-600);
+}
+
+.swal2-icon {
+    border-width: 2px !important;
+}
+
+/* Animation */
+@keyframes fadeInDown {
+    from {
+        opacity: 0;
+        transform: translate3d(0, -20%, 0);
+    }
+    to {
+        opacity: 1;
+        transform: translate3d(0, 0, 0);
+    }
+}
+
+.animated {
+    animation-duration: 0.3s;
+    animation-fill-mode: both;
+}
+
+.fadeInDown {
+    animation-name: fadeInDown;
+}
+
+/* RTL Support for SweetAlert2 */
+[dir="rtl"] .swal2-actions {
+    flex-direction: row-reverse;
+}
+
+[dir="rtl"] .swal2-timer-progress-bar {
+    right: 0;
+    left: auto;
+}
+
+[dir="rtl"] .swal2-close {
+    left: 0;
+    right: auto;
+}
